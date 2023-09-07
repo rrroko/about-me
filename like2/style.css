@@ -1,0 +1,98 @@
+/* ナビゲーションメニューのスタイル */
+.nav {
+    background-color: hsl(0, 0%, 0%); /* 背景色を黒に設定 */
+    padding: 15px 0; /* 上下に余白を追加 */
+  }
+  
+  /* ナビゲーションリストのスタイル */
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* リストアイテムを水平中央配置 */
+  }
+  
+  /* ナビゲーションリスト内のリストアイテムのスタイル */
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  /* ナビゲーションリンクのスタイル */
+  .nav-list li a {
+    text-decoration: none;
+    color: #fff; /* テキスト色を白に設定 */
+    padding: 10px 20px; /* 上下左右に余白を追加 */
+  }
+  
+  /* ナビゲーションリンクのホバー時のスタイル */
+  .nav-list li a:hover {
+    background-color: #fff; /* ホバー時の背景色を白に設定 */
+    color: #000; /* ホバー時のテキスト色を黒に設定 */
+  }
+
+
+
+/* CSSスタイル */
+body {
+    background-color: black; /* 背景色を黒に設定 */
+    color: white; /* テキスト色を白に設定 */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 水平方向中央配置 */
+    align-items: center; /* 垂直方向中央配置 */
+    min-height: 100vh;
+    flex-direction: column; /* 子要素を垂直に並べる */
+  }
+  
+.scrollingImage {
+    position: absolute;
+    top: -20%;
+    height: 40%; /* 画像の高さを調節します */
+    width: 20%;
+}
+
+#leftImage {
+    left: 0;
+}
+
+#rightImage {
+    right: 0;
+}
+
+h3 {
+    font-size: 30px; /* フォントサイズを調整 */
+}
+
+h4 {
+    font-size: 18px;
+}
+
+
+
+/* CSSスタイル */
+footer {
+    background-color: black;
+    padding: 10px; /* ボーダーとコンテンツの間に余白を追加 */
+    text-align: center; /* テキストを中央に配置 */
+  }
+  
+  .nav2 {
+    border: 2px solid white; /* 白色の2px幅の境界線を追加 */
+    display: flex; /* 要素を横並びに配置 */
+    justify-content: space-between; /* リンクを均等に配置 */
+    align-items: center; /* 垂直方向中央に配置 */
+    padding: 10px; /* ボーダーとテキストの間に余白を追加 */
+  }
+  
+  .nav2 a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    font-size: 16px; /* リンクのフォントサイズを設定 */
+  }
+  /* 各リンクに右側の境界線を追加 */
+  .nav2 a:not(:last-child) {
+    border-right: 1px solid white; /* 白色の1px幅の右側の境界線を追加 */
+  }

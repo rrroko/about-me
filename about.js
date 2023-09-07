@@ -2,7 +2,7 @@ let leftImage = document.getElementById('leftImage');
 let rightImage = document.getElementById('rightImage');
 
 // ページの高さを取得
-let pageHeight = document.body.clientHeight;
+let siteHeight = document.documentElement.scrollHeight;
 
 function animateImage(imgElement, initialTop) {
     let topPosition = initialTop;
@@ -10,7 +10,7 @@ function animateImage(imgElement, initialTop) {
     function scrollDown() {
         topPosition += 1;
 
-        if (topPosition > window.innerHeight) {
+        if (topPosition > siteHeight) {
             topPosition = -imgElement.clientHeight;
         }
 

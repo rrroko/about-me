@@ -54,11 +54,8 @@
 
 .scrollingImage {
     position: absolute;
-
     top: -20%;
-
     height: 40%; /* 画像の高さを調節します */
-
     width: 20%;
 }
 
@@ -70,21 +67,18 @@
     right: 0;
 }
 
-/* section5のスタイル */
-.section5 {
-  display: flex;
-  justify-content: center; /* 水平中央配置 */
-  align-items: center; /* 垂直中央配置 */
-  height: 30vh; /* ビューポートの高さいっぱいに設定 */
+.highlight-box {
+  border: 2px solid white; /* 白色の2px幅の境界線を追加 */
+  
+  padding:5px 10px; /* ボーダーとコンテンツの間に余白を追加 */
+  text-align: center; /* テキストを中央に配置 */
+
+  display: inline-block; /* テキストコンテンツの幅に合わせて枠を縮小 */
 }
 
-/* section5内の図形（例：背景色付きのボックス）のスタイル */
-.section5 .highlight-box {
-  background-color: #ff0000; /* 背景色を赤に設定 */
-  padding: 20px;
-  border-radius: 10px; /* 角丸にする */
-  color: #ffffff; /* テキスト色を白に設定 */
-  font-size: 24px; /* フォントサイズを大きく設定 */
-  font-family: "Yu Gothic", sans-serif; /* 和風フォントを指定 */
-  font-weight: bold; /* フォントを太字に設定 */
+.highlight-box a {
+  text-decoration: none;
+  
+  color: white;
+  font-size: 20px; /* リンクのフォントサイズを設定 */
 }
