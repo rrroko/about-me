@@ -1,0 +1,36 @@
+
+/* ナビゲーションリストのスタイル */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* リストアイテムを水平に配置 */
+  }
+  
+  /* ナビゲーションリスト内の各リストアイテムのスタイル */
+  .nav-list li {
+    margin-right: 20px; /* リストアイテム間の横の余白 */
+  }
+  
+  /* ナビゲーションリンクのスタイル */
+  .nav-list li a {
+    display: block; /* リンクをブロック要素として表示 */
+    padding: 10px; /* リンク内の余白 */
+    border: 1px solid #000; /* 枠線を追加 */
+    text-decoration: none; /* 下線を削除 */
+  }
+
+/* CSSスタイル */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center; /* 水平方向中央配置 */
+    align-items: center; /* 垂直方向中央配置 */
+    min-height: 100vh;
+    flex-direction: column; /* 子要素を垂直に並べる */
+  }
+  
