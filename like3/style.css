@@ -1,6 +1,33 @@
 @charset "UTF-8";
-body{
-    background-image: url("./img/monhan_haikei.png");
-    background-size: cover;
-    background-color: black;
-}
+/* ナビゲーションメニューのスタイル */
+.nav {
+    background-color: #000; /* 背景色を黒に設定 */
+    padding: 10px 0; /* 上下に余白を追加 */
+  }
+  
+  /* ナビゲーションリストのスタイル */
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* リストアイテムを水平中央配置 */
+  }
+  
+  /* ナビゲーションリスト内のリストアイテムのスタイル */
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  /* ナビゲーションリンクのスタイル */
+  .nav-list li a {
+    text-decoration: none;
+    color: #fff; /* テキスト色を白に設定 */
+    padding: 10px 20px; /* 上下左右に余白を追加 */
+  }
+  
+  /* ナビゲーションリンクのホバー時のスタイル */
+  .nav-list li a:hover {
+    background-color: #fff; /* ホバー時の背景色を白に設定 */
+    color: #000; /* ホバー時のテキスト色を黒に設定 */
+  }
+  

@@ -1,32 +1,48 @@
+/* ナビゲーションメニューのスタイル */
+.nav {
+  background-color: hsl(0, 0%, 0%); /* 背景色を黒に設定 */
+  padding: 15px 0; /* 上下に余白を追加 */
+}
 
 /* ナビゲーションリストのスタイル */
 .nav-list {
-    list-style: none;
-    padding: 0;
-    display: flex; /* リストアイテムを水平に配置 */
-  }
-  
-  /* ナビゲーションリスト内の各リストアイテムのスタイル */
-  .nav-list li {
-    margin-right: 20px; /* リストアイテム間の横の余白 */
-  }
-  
-  /* ナビゲーションリンクのスタイル */
-  .nav-list li a {
-    display: block; /* リンクをブロック要素として表示 */
-    padding: 10px; /* リンク内の余白 */
-    border: 1px solid #000; /* 枠線を追加 */
-    text-decoration: none; /* 下線を削除 */
-  }
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* リストアイテムを水平中央配置 */
+}
+
+/* ナビゲーションリスト内のリストアイテムのスタイル */
+.nav-list li {
+  margin-right: 20px;
+}
+
+/* ナビゲーションリンクのスタイル */
+.nav-list li a {
+  text-decoration: none;
+  color: #fff; /* テキスト色を白に設定 */
+  padding: 10px 20px; /* 上下左右に余白を追加 */
+}
+
+/* ナビゲーションリンクのホバー時のスタイル */
+.nav-list li a:hover {
+  background-color: #fff; /* ホバー時の背景色を白に設定 */
+  color: #000; /* ホバー時のテキスト色を黒に設定 */
+}
+
+/*section*/
+.section3 {
+  margin-bottom: 40px; /* 下側のマージンを増やします */
+}
+
 
 /* CSSスタイル */
-html, body {
+  body {
+    background-color: black; /* 背景色を黒に設定 */
+    color: white; /* テキスト色を白に設定 */
     height: 100%;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
     display: flex;
     justify-content: center; /* 水平方向中央配置 */
     align-items: center; /* 垂直方向中央配置 */
@@ -34,3 +50,41 @@ html, body {
     flex-direction: column; /* 子要素を垂直に並べる */
   }
   
+
+
+.scrollingImage {
+    position: absolute;
+
+    top: -20%;
+
+    height: 40%; /* 画像の高さを調節します */
+
+    width: 20%;
+}
+
+#leftImage {
+    left: 0;
+}
+
+#rightImage {
+    right: 0;
+}
+
+/* section5のスタイル */
+.section5 {
+  display: flex;
+  justify-content: center; /* 水平中央配置 */
+  align-items: center; /* 垂直中央配置 */
+  height: 30vh; /* ビューポートの高さいっぱいに設定 */
+}
+
+/* section5内の図形（例：背景色付きのボックス）のスタイル */
+.section5 .highlight-box {
+  background-color: #ff0000; /* 背景色を赤に設定 */
+  padding: 20px;
+  border-radius: 10px; /* 角丸にする */
+  color: #ffffff; /* テキスト色を白に設定 */
+  font-size: 24px; /* フォントサイズを大きく設定 */
+  font-family: "Yu Gothic", sans-serif; /* 和風フォントを指定 */
+  font-weight: bold; /* フォントを太字に設定 */
+}
