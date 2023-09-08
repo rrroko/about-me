@@ -64,6 +64,11 @@ body {
     right: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h3 {
     font-size: 30px; /* フォントサイズを調整 */
 }
