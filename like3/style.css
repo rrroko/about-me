@@ -65,6 +65,10 @@ body {
   right: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* CSSスタイル */
 footer {
