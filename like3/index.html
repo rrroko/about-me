@@ -20,7 +20,6 @@
 
 <!--メインコンテンツ-->
 <main>
-<section>
 <section class="section">
     <h1>モンスターの紹介</h1>
     <P>モンハンのとてもカッコイイモンスターの達の紹介です‼</P>
@@ -63,9 +62,8 @@
         </p>
     </section>
 
-</section>
-
 <section>
+
     <!-- 写真左側 -->
     <div class="left-scrolling-container">
         <!-- 他の左側からの画像を追加 -->
@@ -148,35 +146,35 @@
 <script>
     // ページのロード時とリサイズ時に要素を調整
     function adjustElements() {
-      const dynamicText = document.getElementById('dynamicText');
-      const dynamicImage = document.getElementById('dynamicImage');
-      const leftImage = document.getElementById('leftImage');
-      const rightImage = document.getElementById('rightImage');
-  
-      // ウィンドウの幅に応じてフォントサイズを調整
-      const windowWidth = window.innerWidth;
-      let fontSize = '16px'; // 初期フォントサイズ
-      
-      if (windowWidth < 600) {
+        const dynamicText = document.getElementById('dynamicText');
+        const dynamicImage = document.getElementById('dynamicImage');
+        const leftImage = document.getElementById('leftImage');
+        const rightImage = document.getElementById('rightImage');
+        
+        //ウィンドウの幅に応じてフォントサイズを調整
+        const windowWidth = window.innerWidth;
+        let fontSize = '16px'; // 初期フォントサイズ
+        
+        if (windowWidth < 600) {
         fontSize = '14px'; // ウィンドウが狭い場合のフォントサイズ
-      } else if (windowWidth < 900) {
+        } else if (windowWidth < 900) {
         fontSize = '18px'; // ウィンドウが中程度の場合のフォントサイズ
-      }
-  
-      dynamicText.style.fontSize = fontSize;
-  
+        }
+
+        dynamicText.style.fontSize = fontSize;
+
       // 画像の幅をウィンドウの幅に合わせる
-      dynamicImage.style.width = windowWidth + 'px';
-  
+    dynamicImage.style.width = windowWidth + 'px';
+
       // アニメーション要素の位置を調整
       leftImage.style.top = -leftImage.clientHeight * 0.2 + 'px';
       rightImage.style.top = -rightImage.clientHeight * 0.2 + 'px';
     }
-  
+
     // ページのロード時とリサイズ時にadjustElements関数を呼び出す
     window.addEventListener('load', adjustElements);
     window.addEventListener('resize', adjustElements);
-  </script>
+</script>
 
 
 
