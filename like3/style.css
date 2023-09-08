@@ -50,11 +50,12 @@ body {
   flex-direction: column; /* 子要素を垂直に並べる */
 }
 
+
 .scrollingImage {
   position: absolute;
-  top: -20%;
-  height: 20%; /* 画像の高さを調節します */
-  width: 10%;
+  top: -10vh; /* 画像の上部位置をビューポートの高さの10%に設定 */
+  height: 20vh; /* 画像の高さをビューポートの高さの20%に設定 */
+  width: 10vw; /* 画像の幅をビューポートの幅の10%に設定 */
   object-fit: cover;
 }
 
