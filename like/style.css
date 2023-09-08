@@ -66,13 +66,11 @@ body {
 }
 
 
-.image-container {
-    display: flex; /* 子要素を横並びにするために Flexbox を使用 */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.image-container img {
-    margin-right: 10px; /* 画像間の間隔を調整 */
-}
 
 
 /* CSSスタイル */
