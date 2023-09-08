@@ -79,6 +79,122 @@
             洋風にとても似合いますね。
             とってもカッコイイですね‼
         </p>
+
+
+        <section>
+            <!-- 写真左側 -->
+            <div class="left-scrolling-container">
+                <!-- 他の左側からの画像を追加 -->
+                <img src="../img/monhan.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan3.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan5.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan7.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan9.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan11.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan13.png" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan15.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan17.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan19.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan21.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan23.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan25.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan27.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan29.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan31.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan33.png" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan35.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan37.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan39.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan41.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan43.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan45.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan47.png" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan49.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan51.png" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan53.png" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan55.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan57.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan59.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan61.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan63.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan65.jpg" id="leftImage" class="scrollingImage">
+                <img src="../img/monhan67.jpg" id="leftImage" class="scrollingImage">
+            </div>
+            
+        
+            <!-- 写真右側 -->
+            <div class="right-scrolling-container">
+                <!-- 他の右側からの画像を追加 -->
+                <img src="../img/monhan2.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan4.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan6.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan8.png" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan10.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan12.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan14.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan16.png" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan18.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan20.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan22.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan24.png" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan26.png" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan28.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan30.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan32.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan34.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan36.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan38.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan40.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan42.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan44.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan46.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan48.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan50.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan52.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan54.png" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan56.png" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan58.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan60.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan62.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan64.jpg" id="rightImage" class="scrollingImage">
+                <img src="../img/monhan66.jpg" id="rightImage" class="scrollingImage">
+            </div>
+        </section>
+    
+        <script>
+            // ページのロード時とリサイズ時に要素を調整
+            function adjustElements() {
+              const dynamicText = document.getElementById('dynamicText');
+              const dynamicImage = document.getElementById('dynamicImage');
+              const leftImage = document.getElementById('leftImage');
+              const rightImage = document.getElementById('rightImage');
+          
+              // ウィンドウの幅に応じてフォントサイズを調整
+              const windowWidth = window.innerWidth;
+              let fontSize = '16px'; // 初期フォントサイズ
+              
+              if (windowWidth < 600) {
+                fontSize = '14px'; // ウィンドウが狭い場合のフォントサイズ
+              } else if (windowWidth < 900) {
+                fontSize = '18px'; // ウィンドウが中程度の場合のフォントサイズ
+              }
+          
+              dynamicText.style.fontSize = fontSize;
+          
+              // 画像の幅をウィンドウの幅に合わせる
+              dynamicImage.style.width = windowWidth + 'px';
+          
+              // アニメーション要素の位置を調整
+              leftImage.style.top = -leftImage.clientHeight * 0.2 + 'px';
+              rightImage.style.top = -rightImage.clientHeight * 0.2 + 'px';
+            }
+          
+            // ページのロード時とリサイズ時にadjustElements関数を呼び出す
+            window.addEventListener('load', adjustElements);
+            window.addEventListener('resize', adjustElements);
+          </script>
+          
+
         </main>
         <footer>
             <nav class="nav2">

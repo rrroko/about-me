@@ -35,6 +35,10 @@
   margin-bottom: 40px; /* 下側のマージンを増やします */
 }
 
+main {
+  width: 65%;
+
+}
 
 /* CSSスタイル */
   body {
@@ -55,8 +59,9 @@
 .scrollingImage {
     position: absolute;
     top: -20%;
-    height: 40%; /* 画像の高さを調節します */
-    width: 20%;
+    height: 20%; /* 画像の高さを調節します */
+    width: 10%;
+    object-fit: cover;
 }
 
 #leftImage {
@@ -81,4 +86,23 @@
   
   color: white;
   font-size: 20px; /* リンクのフォントサイズを設定 */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* 左側の画像コンテナ */
+.left-scrolling-container {
+  float: left; /* テキストの横に配置 */
+  margin-right: 20px; /* 画像とテキストの間に余白を設定 */
+}
+
+/* 右側の画像コンテナ */
+.right-scrolling-container {
+  float: right; /* テキストの横に配置 */
+  margin-left: 20px; /* 画像とテキストの間に余白を設定 */
 }

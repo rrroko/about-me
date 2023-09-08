@@ -31,7 +31,10 @@
     color: #000; /* ホバー時のテキスト色を黒に設定 */
   }
   
-
+  main {
+    width: 65%;
+  
+  }
 
 /* CSSスタイル */
 body {
@@ -50,8 +53,9 @@ body {
 .scrollingImage {
   position: absolute;
   top: -20%;
-  height: 40%; /* 画像の高さを調節します */
-  width: 20%;
+  height: 20%; /* 画像の高さを調節します */
+  width: 10%;
+  object-fit: cover;
 }
 
 #leftImage {
@@ -87,4 +91,17 @@ footer {
 /* 各リンクに右側の境界線を追加 */
 .nav2 a:not(:last-child) {
   border-right: 1px solid white; /* 白色の1px幅の右側の境界線を追加 */
+}
+
+
+/* 左側の画像コンテナ */
+.left-scrolling-container {
+  float: left; /* テキストの横に配置 */
+  margin-right: 20px; /* 画像とテキストの間に余白を設定 */
+}
+
+/* 右側の画像コンテナ */
+.right-scrolling-container {
+  float: right; /* テキストの横に配置 */
+  margin-left: 20px; /* 画像とテキストの間に余白を設定 */
 }
